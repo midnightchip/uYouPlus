@@ -6,19 +6,9 @@
 %hook NSBundle
 - (NSDictionary *)infoDictionary {
     NSMutableDictionary *info = %orig.mutableCopy;
-    if ([self isEqual:NSBundle.mainBundle])
+    if ([self isEqual:NSBundle.mainBundle] && [[NSUserDefaults standardUserDefaults] boolForKey:kGoogleSigninFix])
         info[@"CFBundleIdentifier"] = @"com.google.ios.youtube";
     return info;
-}
-%end
-
-// Workaround for MiRO92/uYou-for-YouTube#12, qnblackcat/uYouPlus#263
-%hook YTDataUtils
-+ (NSMutableDictionary *)spamSignalsDictionary {
-    return nil;
-}
-+ (NSMutableDictionary *)spamSignalsDictionaryWithoutIDFA {
-    return nil;
 }
 %end
 
@@ -196,6 +186,59 @@ static void refreshUYouAppearance() {
 - (void)beginEnlargeAnimation {}
 %end
 
+%hook GOODialogView
+- (id)imageView {
+    UIImageView *imageView = %orig;
+
+    if ([[self titleLabel].text containsString:@"uYou\n"]) {
+        // // Invert uYou logo in download dialog if dark mode is enabled
+        // if ([[NSUserDefaults standardUserDefaults] integerForKey:@"page_style"] == 0)
+        //     return imageView;
+        // // https://gist.github.com/coryalder/3113a43734f5e0e4b497
+        // UIImage *image = [imageView image];
+        // CIImage *ciImage = [[CIImage alloc] initWithImage:image];
+        // CIFilter *filter = [CIFilter filterWithName:@"CIColorInvert"];
+        // [filter setDefaults];
+        // [filter setValue:ciImage forKey:kCIInputImageKey];
+        // CIContext *context = [CIContext contextWithOptions:nil];
+        // CIImage *output = [filter outputImage];
+        // CGImageRef cgImage = [context createCGImage:output fromRect:[output extent]];
+        // UIImage *icon = [UIImage imageWithCGImage:cgImage];
+        // CGImageRelease(cgImage);
+
+        // Load icon_clipped.png from uYouBundle.bundle
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"uYouBundle" ofType:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+        NSString *iconPath = [bundle pathForResource:@"icon_clipped" ofType:@"png"];
+        UIImage *icon = [UIImage imageWithContentsOfFile:iconPath];
+        [imageView setImage:icon];
+
+        // Resize image to 30x30
+        // https://stackoverflow.com/a/2658801/19227228
+        CGSize size = CGSizeMake(30, 30);
+        UIGraphicsBeginImageContextWithOptions(size, NO, 0.0);
+        [icon drawInRect:CGRectMake(0, 0, size.width, size.height)];
+        UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+
+        [imageView setImage:resizedImage];
+    }
+    
+    return imageView;
+}
+// Increase space between uYou label and video title
+- (id)titleLabel {
+    UILabel *titleLabel = %orig;
+    if ([titleLabel.text containsString:@"uYou\n"] &&
+        ![titleLabel.text containsString:@"uYou\n\n"]
+    ) {
+        NSString *text = [titleLabel.text stringByReplacingOccurrencesOfString:@"uYou\n" withString:@"uYou\n\n"];
+        [titleLabel setText:text];
+    }
+    return titleLabel;
+}
+%end
+
 %ctor {
     %init;
     // if (@available(iOS 16, *)) {
@@ -215,4 +258,7 @@ static void refreshUYouAppearance() {
 
     // Disable uYou's playback speed controls (prevent crash on video playback https://github.com/therealFoxster/uYouPlus/issues/2#issuecomment-1894912963)
     // [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"showPlaybackRate"];
+    
+    // Disable uYou's adblock
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"removeYouTubeAds"];
 }

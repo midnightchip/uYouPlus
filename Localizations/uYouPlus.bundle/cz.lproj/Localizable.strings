@@ -7,6 +7,12 @@
 "REPORT_AN_ISSUE" = "Report an issue";
 "ADD_TITLE" = "Add your title here...";
 
+"COPY_SETTINGS" = "Copy settings";
+"COPY_SETTINGS_DESC" = "Copy all current settings to the clipboard";
+"PASTE_SETTINGS" = "Paste settings";
+"PASTE_SETTINGS_DESC" = "Paste settings from clipboard and apply";
+"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
+
 "QUIT_YOUTUBE" = "Quit YouTube";
 
 "RESTART_YOUTUBE" = "Restart YouTube to apply changes";
@@ -33,8 +39,8 @@
 // Video player options
 "VIDEO_PLAYER_OPTIONS" = "⏯️ Video player options";
 
-"SLIDE_TO_SEEK" = "Enable Slide to seek";
-"SLIDE_TO_SEEK_DESC" = "Bring back the Slide to seek gesture.";
+"SLIDE_TO_SEEK" = "Enable slide to seek";
+"SLIDE_TO_SEEK_DESC" = "Bring back the slide to seek gesture.";
 
 "DISABLE_DOUBLE_TAP_TO_SEEK" = "Disable double tap to seek";
 "DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
@@ -48,7 +54,7 @@
 "YT_MINIPLAYER" = "Povolit Minipřehrávač pro všechna videa";
 "YT_MINIPLAYER_DESC" = "Například u videa pro děti";
 
-"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON" = "Hide Remix button";
 "HIDE_REMIX_BUTTON_DESC" = "";
 
 "HIDE_CLIP_BUTTON" = "Hide Clip button";
@@ -59,6 +65,9 @@
 
 "STOCK_VOLUME_HUD" = "Use stock iOS volume HUD";
 "STOCK_VOLUME_HUD_DESC" = "";
+
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
 
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Video Controls Overlay Options";
@@ -144,3 +153,6 @@
 
 "FIX_GOOGLE_SIGNIN" = "Opravit přihlášení přes Google (pouze pro uživatele TrollStore)";
 "FIX_GOOGLE_SIGNIN_DESC" = "Tuto možnost zapněte pouze v případě, že se nemůžete přihlásit pomocí svého účtu Google a aplikace byla nainstalována prostřednictvím TrollStore. Pokud se můžete normálně přihlásit, ponechte ji deaktivovanou. Je vyžadován restart aplikace.";
+
+"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
+"GOOGLE_SIGNIN_FIX_DESC" = "";

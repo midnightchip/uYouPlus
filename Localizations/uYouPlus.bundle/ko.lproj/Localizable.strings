@@ -7,6 +7,12 @@
 "REPORT_AN_ISSUE" = "Report an issue";
 "ADD_TITLE" = "Add your title here...";
 
+"COPY_SETTINGS" = "Copy settings";
+"COPY_SETTINGS_DESC" = "Copy all current settings to the clipboard";
+"PASTE_SETTINGS" = "Paste settings";
+"PASTE_SETTINGS_DESC" = "Paste settings from clipboard and apply";
+"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
+
 "QUIT_YOUTUBE" = "Quit YouTube";
 
 "RESTART_YOUTUBE" = "Restart YouTube to apply changes";
@@ -33,8 +39,8 @@
 // Video player options
 "VIDEO_PLAYER_OPTIONS" = "⏯️ 비디오 재생 설정";
 
-"SLIDE_TO_SEEK" = "Enable Slide to seek";
-"SLIDE_TO_SEEK_DESC" = "Bring back the Slide to seek gesture.";
+"SLIDE_TO_SEEK" = "Enable slide to seek";
+"SLIDE_TO_SEEK_DESC" = "Bring back the slide to seek gesture.";
 
 "DISABLE_DOUBLE_TAP_TO_SEEK" = "두번 탭하여 탐색 사용하지 않음";
 "DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
@@ -48,7 +54,7 @@
 "YT_MINIPLAYER" = "모든 YouTube 영상에서 미니 플레이어 활성화";
 "YT_MINIPLAYER_DESC" = "유튜브 키즈의 영상 같은 경우.";
 
-"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON" = "Hide Remix button";
 "HIDE_REMIX_BUTTON_DESC" = "";
 
 "HIDE_CLIP_BUTTON" = "Hide Clip button";
@@ -59,6 +65,9 @@
 
 "STOCK_VOLUME_HUD" = "iOS 기본 음량 표시기 사용";
 "STOCK_VOLUME_HUD_DESC" = "";
+
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
 
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 비디오 재생 오버레이 설정";
@@ -144,3 +153,6 @@
 
 "FIX_GOOGLE_SIGNIN" = "구글 로그인 문제 수정 (TrollStore 사용자만 해당)";
 "FIX_GOOGLE_SIGNIN_DESC" = "TrollStore를 통해 설치된 앱에만 적용됩니다: 구글 계정으로 로그인하려면 이 설정을 켜 주세요. 앱을 다시 시작해야 합니다.";
+
+"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
+"GOOGLE_SIGNIN_FIX_DESC" = "";

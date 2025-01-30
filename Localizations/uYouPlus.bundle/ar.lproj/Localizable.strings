@@ -7,6 +7,12 @@
 "REPORT_AN_ISSUE" = "Report an issue";
 "ADD_TITLE" = "Add your title here...";
 
+"COPY_SETTINGS" = "Copy settings";
+"COPY_SETTINGS_DESC" = "Copy all current settings to the clipboard";
+"PASTE_SETTINGS" = "Paste settings";
+"PASTE_SETTINGS_DESC" = "Paste settings from clipboard and apply";
+"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
+
 "QUIT_YOUTUBE" = "Quit YouTube";
 
 "RESTART_YOUTUBE" = "Restart YouTube to apply changes";
@@ -33,8 +39,8 @@
 // Video player options
 "VIDEO_PLAYER_OPTIONS" = "⏯️ خيارات مشغِّل الفيديو";
 
-"SLIDE_TO_SEEK" = "Enable Slide to seek";
-"SLIDE_TO_SEEK_DESC" = "Bring back the Slide to seek gesture.";
+"SLIDE_TO_SEEK" = "Enable slide to seek";
+"SLIDE_TO_SEEK_DESC" = "Bring back the slide to seek gesture.";
 
 "DISABLE_DOUBLE_TAP_TO_SEEK" = "منع خاصية النقر مرتين للتقدم أو التراجع";
 "DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
@@ -48,7 +54,7 @@
 "YT_MINIPLAYER" = "السماح بالمشغل المصغّر لكل فيديوهات يوتيوب";
 "YT_MINIPLAYER_DESC" = "عند تصغير فيديوهات الأطفال مثلاً (قبل إغلاق المقطع).";
 
-"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON" = "Hide Remix button";
 "HIDE_REMIX_BUTTON_DESC" = "";
 
 "HIDE_CLIP_BUTTON" = "Hide Clip button";
@@ -59,6 +65,9 @@
 
 "STOCK_VOLUME_HUD" = "استخدام مؤشر تغيير الصوت الخاص بالنظام";
 "STOCK_VOLUME_HUD_DESC" = "إظهار مؤشر تغيير الصوت الرسمي الخاص بـ iOS بدلاً من مؤشر يوتيوب";
+
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
 
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 أزرار التحكم على الطبقة فوق الفيديو";
@@ -144,3 +153,6 @@
 
 "FIX_GOOGLE_SIGNIN" = "إصلاح تسجيل الدخول بحساب جوجل (لمستخدمي TrollStore فقط)";
 "FIX_GOOGLE_SIGNIN_DESC" = "هذا الخيار لا يعمل إلا إذا كان التطبيق مثبت بواسطة TrollStore: فعل هذا الخيار لتتمكن من تسجيل الدخول بحساب جوجل. يتطلب إعادة تشغيل التطبيق.";
+
+"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
+"GOOGLE_SIGNIN_FIX_DESC" = "";

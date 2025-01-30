@@ -51,15 +51,21 @@
 	path = Tweaks/iSponsorBlock
 	url = https://github.com/Galactic-Dev/iSponsorBlock.git
 	branch = master
-[submodule "Tweaks/IAmYouTube"]
-	path = Tweaks/IAmYouTube
-	url = https://github.com/PoomSmart/IAmYouTube.git
 [submodule "Tweaks/YTClassicVideoQuality"]
 	path = Tweaks/YTClassicVideoQuality
 	url = https://github.com/PoomSmart/YTClassicVideoQuality.git
 [submodule "Tweaks/NoYTPremium"]
 	path = Tweaks/NoYTPremium
 	url = https://github.com/PoomSmart/NoYTPremium.git
-[submodule "Tweaks/YTSpeed"]
-	path = Tweaks/YTSpeed
-	url = https://github.com/therealFoxster/YTSpeed.git
+[submodule "Tweaks/YouTube-X"]
+	path = Tweaks/YouTube-X
+	url = https://github.com/PoomSmart/YouTube-X/
+[submodule "Tweaks/YouGroupSettings"]
+	path = Tweaks/YouGroupSettings
+	url = https://github.com/PoomSmart/YouGroupSettings
+[submodule "Tweaks/YouSpeed"]
+	path = Tweaks/YouSpeed
+	url = https://github.com/PoomSmart/YouSpeed
+[submodule "Tweaks/PSHeader"]
+	path = Tweaks/PSHeader
+	url = https://github.com/PoomSmart/PSHeader.git

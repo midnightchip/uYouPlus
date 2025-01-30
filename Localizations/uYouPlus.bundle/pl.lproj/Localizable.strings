@@ -7,6 +7,12 @@
 "REPORT_AN_ISSUE" = "Zgłoś błąd";
 "ADD_TITLE" = "Podaj tutaj tytuł...";
 
+"COPY_SETTINGS" = "Kopiuj ustawienia";
+"COPY_SETTINGS_DESC" = "Kopiuj ustawienia do schowka";
+"PASTE_SETTINGS" = "Wklej ustawienia";
+"PASTE_SETTINGS_DESC" = "Wklej ustawienia ze schowka i zastosuj je";
+"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
+
 "QUIT_YOUTUBE" = "Zamknij aplikację";
 
 "RESTART_YOUTUBE" = "Zrestartuj YouTube aby wprowadzić zmiany";
@@ -59,6 +65,9 @@
 
 "STOCK_VOLUME_HUD" = "Użyj systemowego paska głośności";
 "STOCK_VOLUME_HUD_DESC" = "";
+
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
 
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Opcje wyglądu odtwarzacza video";
@@ -144,3 +153,6 @@
 
 "FIX_GOOGLE_SIGNIN" = "Napraw logowanie się z Google (tylko dla użytkowników TrollStore)";
 "FIX_GOOGLE_SIGNIN_DESC" = "Włącz tą opcję tylko wtedy, kiedy nie możesz zalogować się swoim kontem Google, a aplikacja została zainstalowana przez TrollStore. Jeżeli da się zalogować normalnie, zostaw to wyłączone. Restart aplikacji jest wymagany.";
+
+"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
+"GOOGLE_SIGNIN_FIX_DESC" = "";

@@ -7,6 +7,12 @@
 "REPORT_AN_ISSUE" = "Report an issue";
 "ADD_TITLE" = "Add your title here...";
 
+"COPY_SETTINGS" = "Copy settings";
+"COPY_SETTINGS_DESC" = "Copy all current settings to the clipboard";
+"PASTE_SETTINGS" = "Paste settings";
+"PASTE_SETTINGS_DESC" = "Paste settings from clipboard and apply";
+"PASTE_SETTINGS_ALERT" = "Are you sure you want to paste the settings?";
+
 "QUIT_YOUTUBE" = "Quit YouTube";
 
 "RESTART_YOUTUBE" = "Restart YouTube to apply changes";
@@ -33,8 +39,8 @@
 // Video player options
 "VIDEO_PLAYER_OPTIONS" = "⏯️ Options du lecteur vidéo";
 
-"SLIDE_TO_SEEK" = "Enable Slide to seek";
-"SLIDE_TO_SEEK_DESC" = "Bring back the Slide to seek gesture.";
+"SLIDE_TO_SEEK" = "Enable slide to seek";
+"SLIDE_TO_SEEK_DESC" = "Bring back the slide to seek gesture.";
 
 "DISABLE_DOUBLE_TAP_TO_SEEK" = "Désactiver le double tap pour chercher";
 "DISABLE_DOUBLE_TAP_TO_SEEK_DESC" = "";
@@ -48,7 +54,7 @@
 "YT_MINIPLAYER" = "Activer le mini-lecteur pour toutes les vidéos YouTube";
 "YT_MINIPLAYER_DESC" = "Vidéos pour enfants par exemple";
 
-"HIDE_REMIX_BUTTON" = "Hides Remix button";
+"HIDE_REMIX_BUTTON" = "Hide Remix button";
 "HIDE_REMIX_BUTTON_DESC" = "";
 
 "HIDE_CLIP_BUTTON" = "Hide Clip button";
@@ -59,6 +65,9 @@
 
 "STOCK_VOLUME_HUD" = "Utiliser l'affichage iOS du volume par défaut";
 "STOCK_VOLUME_HUD_DESC" = "";
+
+"REPLACE_YT_DOWNLOAD_WITH_UYOU" = "Replace YouTube's download with uYou's";
+"REPLACE_YT_DOWNLOAD_WITH_UYOU_DESC" = "";
 
 // Video controls overlay options
 "VIDEO_CONTROLS_OVERLAY_OPTIONS" = "📹 Options de superposition des contrôles vidéo";
@@ -144,3 +153,6 @@
 
 "FIX_GOOGLE_SIGNIN" = "Réparer l'identification Google (pour les utilisateurs de TrollStore uniquement)";
 "FIX_GOOGLE_SIGNIN_DESC" = "Activez cette option uniquement si vous ne pouvez pas vous connecter avec votre compte Google et que l'application a été installée via TrollStore. Si vous pouvez vous connecter normalement, laissez-la désactivée. Un redémarrage de l'application est nécessaire.";
+
+"GOOGLE_SIGNIN_FIX" = "Google sign-in fix";
+"GOOGLE_SIGNIN_FIX_DESC" = "";
